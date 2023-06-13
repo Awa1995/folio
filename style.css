@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@700 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Playfair+Display:wght@500 & display=swap');
+header{
+    background-color:turquoise;
+}
+body{
+    background-color:white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;   
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+
+}
+.navbar ul{
+    display: flex;
+    align-items:center;
+    padding: 30px;
+    margin:30px;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar ul a{
+    margin: 20px;
+    text-decoration: none;
+    color:black;
+    list-style: none;
+    font-family:inherit;
+}
+.navbar ul a :hover{
+    color:blue;
+}
+header .prof{
+    width:150px;
+    height:150px;
+}
+ img .prof {
+
+ 
+   width:150px;
+   height:150px;
+}
+#Biographie{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+.cadre{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction:row;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;   
+    gap: 5px;
+}
+
+
+.grid{display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    justify-content:space-around;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:25px; 
+    gap: 5px;
+    }
+ .expert{
+        border: 1px solid, turquoise;
+    }
+#Qualités{
+    width: 100%;
+    height: 100%;
+}
+.progress-bar{
+    background-color:aquamarine;
+    color:turquoise;
+    margin-bottom: 1rem;
+    margin: 40px;
+    width: 50%;
+    align-items: center;
+}
+.bar {
+    background:turquoise;
+    padding: 1rem;
+}
+.references{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;     
+}
+
+.tof1 img{
+    padding-left: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px; color:turquoise;
+    flex-direction: row;
+
+}
+.tof2 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px; color: turquoise;
+    flex-direction: row;
+}
+
+.tof3 img{
+    padding-left: 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px; color: turquoise;
+    flex-direction: row;
+   
+}
+
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;   
+    gap: 5px;
+}
+h2{
+    color:turquoise;
+    font-size:40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    ;
+   display: flex;
+   
+   align-items: center;
+   margin-left:500px;
+    }
+    h4{
+        font-size: 20px;
+    }
+   
+    
+    @media screen and (max-width:1024px) and (min-width:768px) { 
+        body{
+            background: white;
+        }
+        .navbar ul{
+            display: flex;
+            width: 60px;
+        }
+        h2{
+            color:black;
+            font-size:25px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            ;
+           display: flex;
+           position: relative;
+           align-items: center;
+           margin-left:500px;
+            }
+            .responsive {
+                max-width: 100%;
+                height: auto;
+              }
+              .prof{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            #Biographie{
+                display: block;
+            }
+            #Formations{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+        }
+        
+        }
+@media screen and (max-width:767px) and (min-width:375px) {
+    body{
+        background:white;
+    }
+    .navbar ul{
+        display: none;
+        width: 60px;
+        margin-left: 100px;
+
+    }
+    nav{
+        display: block;
+        flex-direction: column;
+    
+    }
+      h2{
+        color:black;
+        font-size:25px;
+        margin-left: 50px;
+        }
+        #Biographie{
+            padding: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+            
+    .cadre{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns:auto;
+    }
+    .references{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns:auto;
+    }
+    .prof{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #Qualités .hardsskills {
+        display: block;
+    }
+    #references{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #contacts{
+        display: block;
+    }
+    #burger {
+        left: 30rem;
+        top: 20px;
+        width:30px;
+        height:2px;
+        background:white;
+        display:inline-block;
+        position:relative;
+        padding: 10px,10px,10px,10px;
+      }
+      #burger::before,
+      #burger::after {
+        content:'';
+        width:30px;
+        height:2px;
+        background:white;
+        display:inline-block;
+        position:absolute;
+        transform-origin: center;
+        transition: all 0.3s ease;
+      }
+      #burger::before {
+        top:-7px;
+      }
+      #burger::after {
+        top:7px;
+      }
+      #burger.open {
+        background:transparent; /* la barre du milieu disparait */
+      }
+      /* celles du haut et du bas s'inclinent pour former une croix */
+      #burger.open::before {
+        transform: rotate(45deg); 
+        top:0;
+      }
+      #burger.open::after {
+        transform: rotate(-45deg);
+        top:0;
+      }
+
+}
